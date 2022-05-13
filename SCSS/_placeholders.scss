@@ -1,0 +1,62 @@
+// **************************************************
+// PLACEHOLDERS
+// **************************************************
+
+
+// vertical-align
+%vertical-align {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+//horizontal-align
+%horizontal-align {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* FLEXBOX MIXINS */
+
+// set to flexbox column
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// set to flexbox with content full centered
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// set to flexbox with content centered horizontally
+%flex-centerX {
+  display: flex;
+  justify-content: center;
+}
+
+// set to flexbox with content centered vertically
+%flex-centerY {
+  display: flex;
+  align-items: center;
+}
+
+
+// set to flexbox column with content full centered
+%flex-center-column {
+  @extend %flex-center;
+  flex-direction: column;
+}
+
+// set to flexbox column with content centered horizontally
+%flex-centerX-column {
+  @extend %flex-centerX;
+  flex-direction: column;
+}
+
+// set to flexbox column with content centered vertically
+%flex-centerY-column {
+  @extend %flex-centerY;
+  flex-direction: column;
+}

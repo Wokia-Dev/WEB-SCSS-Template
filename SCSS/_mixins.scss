@@ -1,0 +1,63 @@
+// **************************************************
+// MIXINS
+// **************************************************
+
+// set position of element to absolute and set top, left, right, bottom
+@mixin absolute-pos ($top: false, $right: false, $bottom: false, $left : false, $z-index: false) {
+  position: absolute;
+  @if($top) {
+    top: $top;
+  }
+  @if($right) {
+    right: $right;
+  }
+  @if($bottom) {
+    bottom: $bottom;
+  }
+  @if($left) {
+    left: $left;
+  }
+  @if($z-index) {
+    z-index: $z-index;
+  }
+}
+
+// set font with all properties
+@mixin font-select ($font: false, $font_size: false, $font_weight: false, $font-color: false, $text_transform: false , $line_height: false) {
+  @if $font {
+    font-family: $font;
+  }
+  @if $font_size {
+    font-size: $font_size;
+  }
+  @if $font_weight {
+    font-weight: $font_weight;
+  }
+  @if $font-color {
+    color: $font-color;
+  }
+  @if $text_transform {
+    text-transform: $text_transform;
+  }
+  @if $line_height {
+    line-height: $line_height;
+  }
+}
+
+// basic box dimensions
+@mixin box ($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+// basic max dimension
+@mixin max-dim ($width, $height: $width) {
+  max-width: $width;
+  max-height: $height;
+}
+
+// basic min dimension
+@mixin min-dim ($width, $height: $width) {
+  min-width: $width;
+  min-height: $height;
+}

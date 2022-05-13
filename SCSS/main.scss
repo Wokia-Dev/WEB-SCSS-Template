@@ -1,0 +1,12 @@
+// **************************************************
+// MAIN SCSS FILE
+// **************************************************
+
+// command to compile scss to css : sass --watch SCSS/main.scss Resources/CSS/style.css
+
+// import scss files
+@import './_variables.scss';
+@import './_mixins.scss';
+@import './_placeholders.scss';
+
+// styles
